@@ -89,6 +89,9 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_WYY=y" >> .config #网易云解锁
         echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> .config #网易云解锁GO版本执行文件（4M多）注意固件超大小,不集成会自动下载
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
+        echo "CONFIG_FIRMWARE_INCLUDE_MINIDLNA=y" >> .config #Include Minidlna UPnP mediaserver. ~1.6MB
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=n" >> .config #Include Transmission torrent. openssl ~1.2MB, transmission ~1.5MB
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=n" >> .config #Include Transmission-Web-Control (advanced WebUI). ~0.8MB
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
         #格式如下：
